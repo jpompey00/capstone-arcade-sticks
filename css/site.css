@@ -3,5 +3,32 @@
 }
 
 body{
-    background-image: url("../images/backgrounds/brickwall.jpg");
+    background-image: url("../images/backgrounds/darker_brickwall.png")
+}
+
+.rubik-spray paint-regular p{
+    font-family: "Rubik Spray Paint", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+  }
+
+  .rubik-spray paint-regular li{
+    font-family: "Rubik Spray Paint", system-ui;
+    font-weight: 400;
+    font-style: normal;
+
+  }
+  
+  .rubik-spray paint-regular h2{
+    font-family: "Rubik Spray Paint", system-ui;
+    font-weight: 400;
+    font-style: normal;
+
+  }
+  
+
+article{
+/*Add background image to this for the graffiti feel?*/
+/*May just nix the graffiti text idea*/
 }

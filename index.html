@@ -10,6 +10,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/site.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -31,10 +37,11 @@
                             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="login.html">Login</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="products.html">Products</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Login</a>
                         </li>
 
                         <li class="nav-item">
@@ -57,22 +64,24 @@
 
     <main>
         <!--Fix the layout-->
-        <div class="container">
+        <div class="container mt-5">
             <div class="row">
-                <div class="col border border-4 border-bottom-0 rounded-4 rounded-bottom-0 p-2 bg-light mt-3">
+                <!-- <div class="col border border-4 border-bottom-0 rounded-4  p-2 bg-light mt-3 opacity-100">
                     <h1>Welcome to Controller Crafters</h1>
                 </div>
-                <div class = "col"></div>
+                <div class = "col"></div> -->
             </div>
 
             <div class="row">
-                <div class="col-6 border border-4 border-top-0 rounded-4 rounded-top-0 p-2 bg-light">
-                    <!--Fix Later-->
-                    <img src="images/ControllerIcon.png" width="650" height="500" alt="">
+                <div class="col-6 opacity-75">
+                    <!--Add transparency, dimensions, and SHIT-->
+                    <img src="images/logo_real.png" width="700" height="500" alt="">
                 </div>
-                <div class="col-6">
+                <div class="col-6 opacity-100">
                     <!--Come back to fix the size, style and shit-->
-                    <article class = "border border-4 rounded-4 p-2 bg-light">
+                    <article class = "border border-4 rounded-4 p-2 bg-light rubik-spray font-color opacity-100">
+                        <!--border border-4 rounded-4 p-2 bg-light -->
+                       <paint-regular >
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe repellat quod enim vel mollitia
                             libero molestias, eaque suscipit aperiam.
                             Voluptate consequatur veniam magnam distinctio minus officia accusamus saepe quas inventore.
@@ -85,6 +94,7 @@
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe repellat quod enim vel mollitia
                             libero molestias, eaque suscipit aperiam.
                             Voluptate consequatur veniam magnam distinctio minus officia accusamus saepe quas inventore.</p>
+                        </paint-regular>
                     </article>
 
                 </div>
@@ -95,7 +105,9 @@
                 </div>
                 
                 <!--Fix the spacing and shit on this one. Want it to be lined up with the other shit-->
-                <div class = "col border border-4 rounded-4 p-2 bg-light">
+                <div class = "col border border-4 rounded-4 p-2 bg-light rubik-spray">
+                   
+                    <paint-regular>
                     <h2>What we offer!</h2>
                     <ul>
                         <li>Custom Stick Building</li>
@@ -103,6 +115,7 @@
                         <li>Leverless Building</li>
                         <li>3D Printing</li>
                     </ul>
+                </paint-regular>
                 </div>
             </div>
         </div>

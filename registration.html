@@ -26,17 +26,18 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="login.html">Login</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="products.html">Products</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="registration.html">Registration</a>
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="registration.html">Registration</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="checkout.html">Checkout</a>
@@ -54,8 +55,9 @@
 
 
     <!--Fill in the placeholder -->
+    <!-- comment code -->
     <main>
-        <div class="container border border-4 rounded-4 p-2 bg-light mt-3">
+        <div class="container border border-4 rounded-4 p-2 bg-light mt-3 text-center w-50">
             <div class="row">
                 <div class="col">
                     <h1>Registration</h1>
@@ -63,71 +65,73 @@
             </div>
 
             <div class="row ">
-                <div class="col-md-2"></div>
-                <div class="col-md-8">
-                    <form>
-                        
-                        <div class = "mb-3">
-                            <label for = "username" class = "form-label">Username</label>
-                            <input type = "username" class = "form-control" id = "#">
+
+                <!-- <div class="col-1"></div> -->
+                    <form class = "col-7 text-center mx-auto">
+
+
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Username</label>
+                            <input type="username" class="form-control" id="username" required>
 
                         </div>
-                        
-                        <div class = "mb-3">
-                            <label for = "#" class = "form-label">Email Address</label>
-                            <input type = "email" class = "form-control" id = "#">
-                            <div id = "emailHelp" class = 'form-text'>We will share your email with everyone else</div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" required>
+                            <div id="emailHelp" class='form-text'>We will share your email with everyone else</div>
                         </div>
-                        <div class = "mb-3">
-                            <lavel for ="#" class ="form-label">Password</lavel>
-                            <input type = "password" class = "form-control" id = "#">
+                        <div class="mb-3">
+                            <!--Add min characters like a password-->
+                            <lavel for="password" class="form-label">Password</lavel>
+                            <input type="password" class="form-control" id="password" required>
 
                         </div>
-                        <div class = "mb-3">
-                            <lavel for ="#" class ="form-label">Confirm Password</lavel>
-                            <input type = "password" class = "form-control" id = "passwordConfirm">
-                            <div id = "passwordHelp" class = 'form-text' aria-describedby="passwordConfirmHelp">
+                        <div class="mb-3">
+                            <lavel for="passwordConfirm" class="form-label">Confirm Password</lavel>
+                            <input type="password" class="form-control" id="passwordConfirm">
+                            <div id="passwordHelp" class='form-text' aria-describedby="passwordConfirmHelp" required>
                                 Please type the same password again</div>
                         </div>
-       
 
-                        <div class = "mb-4"> </div>
-                            <!-- Maybe. Replace with Radio if needed
-                            <button class = "btn btn-secondary dropdown-toggle" type ="button" id = # data-bs-toggle="dropdown">
-                                Text
-                            </button>
-                            <ul class = "dropdown-menu" aria-labelledby="#">
-                                <li><a class = "dropdown-item" href = "#">Option 1</a></li>
-                                <li><a class = "dropdown-item" href = "#">Option 2</a></li>
-                                <li><a class = "dropdown-item" href = "#">Option 3</a></li>
-                                <li><a class = "dropdown-item" href = "#">Free Response</a></li>
-                            </ul>
-                        </div>
-                         -->
 
-                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                            <label class="form-check-label" for="flexRadioDefault1">
-                              Default radio
-                            </label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                            <label class="form-check-label" for="flexRadioDefault2">
-                              Default checked radio
-                            </label>
-                          </div>
-                          <div class = "mb-3 form-check"></div>
-                        <button type = "submit" class = "mt-5 btn btn-primary">Submit</button>
-                    
-                    
+                        <div class="mb-4"> </div>
+
+
                     </form>
+                <!-- <div class="col-1"></div> -->
+            </div>
 
-
-
-
-                </div>
-                <div class="col-md-2"></div>
+            <div class="row">
+                <form class="col-3 mx-auto">
+                    <!--Radio Buttons Add how do you feel about it-->
+                    <p>How did you hear about us?</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="rememberMe">
+                        <label class="form-check-label" for="rememberMe">
+                            Twitter/X
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="rememberMe">
+                        <label class="form-check-label" for="rememberMe">
+                            Youtube
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="rememberMe">
+                        <label class="form-check-label" for="rememberMe">
+                            Other online ads
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="rememberMe">
+                        <label class="form-check-label" for="rememberMe">
+                            In-Person Event
+                        </label>
+                    </div>
+                    <button type="submit" class="mt-5 btn btn-primary">Submit</button>
+                </form>
             </div>
         </div>
 

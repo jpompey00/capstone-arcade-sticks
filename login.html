@@ -29,10 +29,11 @@
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="login.html">Login</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="products.html">Products</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="login.html">Login</a>
                         </li>
 
                         <li class="nav-item">
@@ -42,10 +43,6 @@
                             <a class="nav-link" href="checkout.html">Checkout</a>
                         </li>
                     </ul>
-                    <!-- <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form> -->
                 </div>
             </div>
         </nav>
@@ -54,47 +51,39 @@
 
 
     <main>
-        <!-- <div class="container">
+
+
+
+        <form class="container border border-4 rounded-4 p-2 bg-light mt-3 text-center w-50">
             <div class="row">
                 <div class="col">
-                    <h1>Hello, World!</h1>
+                    <h1>Login</h1>
                 </div>
             </div>
-
-            <div class="row">
-                <div class="col">
-
-                </div>
-            </div>
-        </div> -->
-
-        <form>
-
             <div class="row ">
-                <div class="col-md-2"></div>
-                <div class="col-md-8 border border-4 rounded-4 p-2 bg-light mt-4">
+                <div class="col-7 text-center mx-auto">
                     <form>
 
                         <div class="mb-3">
                             <label for="username" class="form-label">Username</label>
-                            <input type="username" class="form-control" id="#">
+                            <input type="username" class="form-control" id="username" required>
 
                         </div>
 
                         <div class="mb-3">
-                            <lavel for="#" class="form-label">Password</lavel>
-                            <input type="password" class="form-control" id="#">
+                            <lavel for="password" class="form-label">Password</lavel>
+                            <input type="password" class="form-control" id="password" required>
 
                         </div>
 
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                             <label class="form-check-label" for="flexCheckDefault">
-                              Remember Me?
+                                Remember Me?
                             </label>
-                          </div>
-                        <div class = "mb-3 form-check">
-                            <button type = "submit" class = "mt-5 btn btn-primary">Submit</button>
+                        </div>
+                        <div class=" col-3 text-center mx-auto mb-3 form-check">
+                            <button type="submit" class="mt-5 btn btn-primary">Submit</button>
                         </div>
 
                 </div>
