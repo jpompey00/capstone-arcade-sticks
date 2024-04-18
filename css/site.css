@@ -3,14 +3,17 @@
 }
 
 body{
-    background-image: url("../images/backgrounds/darker_brickwall.png")
+    background-image: url("../images/backgrounds/darker_brickwall.png") 
 }
 
+/*Fix Line Spacing*/
 .rubik-spray paint-regular p{
     font-family: "Rubik Spray Paint", system-ui;
     font-weight: 400;
     font-style: normal;
     font-size: large;
+    /*Mess with this*/
+    letter-spacing: 2px;
   }
 
   .rubik-spray paint-regular li{
@@ -28,7 +31,14 @@ body{
   }
   
 
-article{
+
+
+.bg-img{
+  /* background-image: url(../images/backgrounds/ripped_flyerbackground.png);
+  background-size: 100% 100%; */
+  background-color: #FFEED8 !important; /*I know its not best practices*/
+
+
 /*Add background image to this for the graffiti feel?*/
 /*May just nix the graffiti text idea*/
 }
