@@ -4,6 +4,7 @@
     border:5px solid pink
 }
 /*************************/
+
 a:hover{
   color: gray !important
 }
@@ -13,14 +14,14 @@ body{
     font-family: sans-serif;
 }
 
-/*Fix Line Spacing*/
+
 .rubik-spray paint-regular p{
     font-family: "Rubik Spray Paint", system-ui;
     font-weight: 400;
     font-style: normal;
     font-size: large;
 
-    /*Mess with this*/
+
     letter-spacing: 2px;
   }
 
@@ -31,7 +32,7 @@ body{
 
   }
   
-  .rubik-spray paint-regular h2{
+  .rubik-spray paint-regular h1, h2,h3{
     font-family: "Rubik Spray Paint", system-ui;
     font-weight: 400;
     font-style: normal;
