@@ -9,7 +9,8 @@ a:hover{
 }
 
 body{
-    background-image: url("../images/backgrounds/darker_brickwall_v3.png") 
+    background-image: url("../images/backgrounds/darker_brickwall_v3.png");
+    font-family: sans-serif;
 }
 
 /*Fix Line Spacing*/
@@ -43,6 +44,31 @@ body{
     font-style: normal;
 
   }
+
+/* <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
+
+.urbanist-nav {
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.urbanist-product {
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.urbanist-other {
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
   
   /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -66,8 +92,6 @@ input[type=number] {
   /* background-color: rgba(249, 255, 172, 0.95) !important; */
   /* background-color: #FFEED8 !important; I know its not best practices */
 
-
-
-/*Add background image to this for the graffiti feel?*/
-/*May just nix the graffiti text idea*/
 }
+
+
