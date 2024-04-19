@@ -1,54 +1,29 @@
 
-/*For Testing*/
-.highlight{
-    border:5px solid pink
-}
-/*************************/
-
+/* Adds the light gray hover over the nav bar links */
 a:hover{
   color: gray !important
 }
 
+/* puts the background image over the pages and sets a default font incase the one I explicitly linked in the HTML doesn't work  */
 body{
     background-image: url("../images/backgrounds/darker_brickwall_v3.png");
     font-family: sans-serif;
 }
 
 
-.rubik-spray paint-regular p{
-    font-family: "Rubik Spray Paint", system-ui;
-    font-weight: 400;
-    font-style: normal;
-    font-size: large;
+/* Class I made to change the background color for the text boxes and nav bar
+I don't think using !important is the best way to go about that but I didn't want to risk messing with the Sass code */
+.bg-img{
+
+  background-color: rgb(255, 238, 216,0.95) !important; 
+
+}
 
 
-    letter-spacing: 2px;
-  }
 
-  .rubik-spray paint-regular li{
-    font-family: "Rubik Spray Paint", system-ui;
-    font-weight: 400;
-    font-style: normal;
 
-  }
-  
-  .rubik-spray paint-regular h1, h2,h3{
-    font-family: "Rubik Spray Paint", system-ui;
-    font-weight: 400;
-    font-style: normal;
 
-  }
-
-  .rubik-spray paint-regular a{
-    font-family: "Rubik Spray Paint", system-ui;
-    font-weight: 400;
-    font-style: normal;
-
-  }
-
-/* <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900 */
-
+/* Font used is urbanist, and there are 3 versions I made based on what they're used for, only difference being in their weight */
 .urbanist-nav {
   font-family: "Urbanist", sans-serif;
   font-optical-sizing: auto;
@@ -66,33 +41,26 @@ body{
 .urbanist-other {
   font-family: "Urbanist", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
 }
 
-  
+
+
+
+
+/* This line of code is to remove the counter buttons from the input fields that need a number */
+/* link: https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp */
   /* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
-}
-
-
-
-.bg-img{
-  /* background-image: url(../images/backgrounds/ripped_flyerbackground.png);
-  background-size: 100% 100%; */
-  background-color: rgb(255, 238, 216,0.95) !important; 
-  /* I know its not best practices */
-  /* background-color: rgba(249, 255, 172, 0.95) !important; */
-  /* background-color: #FFEED8 !important; I know its not best practices */
-
-}
-
-
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+  
+  
