@@ -17,7 +17,7 @@
 <body>
     <!--Start of Navbar-->
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-img urbanist-nav">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-img urbanist-nav fs-5">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"><img src="images/cut_Logo_small.png" height="51" width="55"
                         alt="small logo that reads CC"></a>
@@ -56,7 +56,7 @@
 
 
     <main>
-        <div class="container border border-4 rounded-4 p-2 bg-img mt-3 text-center urbanist-other">
+        <div class="container border border-4 rounded-4 p-2 bg-img mt-3 text-center urbanist-other fs-5">
 
             <section class="row">
                 <div class="col">
@@ -66,14 +66,14 @@
 
             <!--Row for Username, requires text input-->
             <div class="row ">
-                <div class="col-7 mx-auto">
+                <form class="col-7 mx-auto">
 
                     <div class="mb-3">
-                        <label for="username" class="form-label">Username</label>
+                        <label for="username" class="form-label fs-5">Username</label>
                         <input type="text" class="form-control" id="username" required>
 
                     </div>
-                </div>
+                </form>
             </div>
 
             <!--Row for Email, requires email input-->
@@ -81,64 +81,66 @@
                 <form class="col-7 mx-auto">
 
                     <div class="mb-3">
-                        <label for="email" class="form-label">Email Address</label>
+                        <label for="email" class="form-label fs-5">Email Address</label>
                         <input type="email" class="form-control" id="email" required>
-                        <div id="emailHelp" class='form-text'>We will share your email with everyone else</div>
+                        <div id="emailHelp" class='form-text' aria-describedby="email">We will share your email with everyone else</div>
                     </div>
                 </form>
             </div>
 
 
+            <!--Row for password, requires password input-->
             <div class="row">
                 <form class="col-7 mx-auto">
 
                     <div class="mb-3">
-                        <!-- Add min characters like a password -->
-                        <lavel for="password" class="form-label">Password</lavel>
+                        <label for="password" class="form-label fs-5">Password</label>
                         <input type="password" class="form-control" id="password" required>
-
-
                     </div>
 
                 </form>
             </div>
 
+
+            <!--password confirmation, requires password input-->
             <div class="row">
                 <form class="col-7 text-center mx-auto">
                     <div class="mb-3">
-                        <lavel for="passwordConfirm" class="form-label">Confirm Password</lavel>
-                        <input type="password" class="form-control" id="passwordConfirm">
-                        <div id="passwordHelp" class='form-text' aria-describedby="passwordConfirmHelp" required>
+                        <label for="passwordConfirm" class="form-label fs-5">Confirm Password</label>
+                        <input type="password" class="form-control" id="passwordConfirm" required>
+                        <div id="passwordConfirmHelp" class='form-text' aria-describedby="passwordConfirm">
                             Please type the same password again</div>
                     </div>
                 </form>
 
             </div>
 
+            <!--Radio buttons asking how you heard about us-->
+            <!--Not entirely sure how the for attribute works for HTML and JS-->
             <div class="row">
                 <form class="col-3 mx-auto">
-                    <p>How did you hear about us?</p>
+                    <h5 class ="text-center">How did you hear about us?</h5>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="rememberMe">
-                        <label class="form-check-label" for="rememberMe">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="twitterRadio">
+                        <label class="form-check-label" for="twitterRadio">
                             Twitter/X
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="rememberMe">
-                        <label class="form-check-label" for="rememberMe">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="youtubeRadio">
+                        <label class="form-check-label" for="youtubeRadio">
                             Youtube
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="rememberMe">
-                        <label class="form-check-label" for="rememberMe">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="onlineAdsRadio">
+                        <label class="form-check-label" for="onlineAdsRadio">
                             Other online ads
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="rememberMe">
-                        <label class="form-check-label" for="rememberMe">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="eventRadio">
+                        <label class="form-check-label" for="eventRadio">
                             In-Person Event
                         </label>
                     </div>
@@ -157,14 +159,6 @@
 
 
     </main>
-
-
-    <footer>
-
-
-    </footer>
-
-
 
 
 
